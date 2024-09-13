@@ -2,3 +2,7 @@
     background-image: url("../../assets/home.png");
     background-size: cover;
 }
+
+#img2{
+    background-image: url("../../assets/LogosContainer.png");
+}
