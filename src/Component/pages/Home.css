@@ -1,3 +1,11 @@
+
+    .gradient-border {
+      background: linear-gradient(254.83deg, #6B38E3 0%, #AC92E8 52.21%, #EDEDED 104.41%);
+      position: relative;
+      padding: 1px;
+      border-radius: 24px;
+    }
+      
 #img {
     background-image: url("../../assets/home.png");
     background-size: cover;
@@ -5,4 +13,45 @@
 
 #img2{
     background-image: url("../../assets/LogosContainer.png");
+}
+
+#img3{
+    background-image: url("../../assets/Group\ 1000003566.png");
+    width: 586.43px;
+    height: 397.04px;
+    margin-top: -116px;
+    background-size: cover;
+    background-size: 100%;
+}
+#img4{
+    background-image: url("../../assets/Group\ 1000003566.png");
+    width: 586.43px;
+    height: 397.04px;
+    margin-top: -116px;
+    background-size: cover;
+    background-size: 100%;
+}
+#img5{
+    background-image: url("../../assets/Group\ 1000003529.png");
+    width: 352.4px;
+    height: 225.2px;
+    margin-top: -20px;
+    background-size: cover;
+    background-size: 100%;
+}
+#img6{
+    background-image: url("../../assets/Group\ 1000003568.png");
+    width: 386.43px;
+    height: 297.04px;
+    margin-top: -20px;
+    background-size: cover;
+    background-size: 100%;
+}
+#img7{
+    background-image: url("../../assets/Group\ 1000003530.png");
+    width: 352.4px;
+    height: 100%;
+    margin-top: -116px;
+    background-size: cover;
+    background-size: 100%;
 }
