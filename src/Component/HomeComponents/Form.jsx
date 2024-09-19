@@ -11,7 +11,7 @@ import Highlightedtect from '../Common/Highlightedtect';
 
 function Form() {
   return (
-    <div>   <div className='flex mt-[-40%] mb-2 items-center justify-center h-[663px] w-[746px] rounded-[24px] bg-[#F6F6F6] shadow-[0px_8px_48px_0px_#00000014]'>
+  <div className='flex items-center justify-center p-5 w-[746px] rounded-[24px] bg-[#F6F6F6] shadow-[0px_8px_48px_0px_#00000014]'>
     <div className='flex flex-col w-[587px] h-[591px] gap-[36px] justify-start items-center'>
 
       <div className='flex flex-col w-[335px] h-[59px] gap-[8px]'>
@@ -64,7 +64,7 @@ function Form() {
         </div>
       </div>
     </div>
-  </div></div>
+  </div>
   )
 }
 
