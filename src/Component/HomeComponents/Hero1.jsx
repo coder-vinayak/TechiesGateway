@@ -12,7 +12,6 @@ import Highlightedtect from '../Common/Highlightedtect';
 
 function Hero1() {
   return (
-   <div>
     <div className='flex flex-col h-[891px] mt-[202px] w-7/12 gap-[18px] items-center'>
             <p className='text-[48px] leaading-[68px] m-0 text-center font-semibold'>BoostHub - <Highlightedtect text={"Supercharge"}/> Your Social Media Metrics</p>
             <div className='flex w-[564px] h-[48px] gap-[18px] mx-auto'>
@@ -23,7 +22,6 @@ function Hero1() {
               <div className='bg-[#3D55CC] py-[12px] px-[24px] rounded-[48px]'>Search</div>
             </div>
           </div>
-   </div>
     
   )
 }

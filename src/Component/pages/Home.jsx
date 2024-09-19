@@ -20,13 +20,13 @@ const Home = () => {
       <Navbar /> 
       <div
         id="img"
-        className={"flex flex-col items-center h-[1158.13px] w-full"}
+        className={"flex flex-col items-center h-[1158.13px] w-full mb-3 py-5"}
       >
         <Hero1 />
         <Form />
-        <Hero2 />
       </div>
       <div className="flex flex-col gap-[36px]">
+        <Hero2 />
         <Hero3 />
         <Hero4 />
       </div>
