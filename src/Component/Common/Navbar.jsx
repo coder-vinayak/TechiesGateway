@@ -3,7 +3,7 @@ import Highlightedtext from './Highlightedtect'
 
 function Navbar() {
   return (
-    <div className='h-[88px] bg-[#FAFAFA] shadow-[0px_1px_56px_-20px_#00000040]'>
+    <div className='fixed z-10 top-0 w-full h-[88px] bg-[#FAFAFA] shadow-[0px_1px_56px_-20px_#00000040]'>
     <div className='w-10/12 flex mx-auto items-center  justify-between h-full'>
         <div className='text-[32px] font-semibold leading-[39.36px] '>
             SMM <Highlightedtext text='Panel'/>
