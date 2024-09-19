@@ -55,3 +55,13 @@
     background-size: cover;
     background-size: 100%;
 }
+
+#imgA{
+    background-image: url('../../assets/gala_secure.png');
+}
+#imgB{
+    background-image: url('../../assets/Ellipse2.png');
+}
+#imgC{
+    background-image: url('../../assets/Ellipse3.png');
+}
