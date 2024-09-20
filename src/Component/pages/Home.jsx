@@ -13,6 +13,8 @@ import Hero2 from "../HomeComponents/Hero2";
 import Hero3 from "../HomeComponents/Hero3";
 import Hero4 from "../HomeComponents/Hero4";
 import Form from "../HomeComponents/Form";
+import Accordion from "../HomeComponents/Accordion";
+import Hero5 from "../HomeComponents/Hero5";
 
 const Home = () => {
   return (
@@ -29,6 +31,8 @@ const Home = () => {
         <Hero2 />
         <Hero3 />
         <Hero4 />
+        <Hero5/>
+        <Accordion/>
       </div>
     </div>
   );
