@@ -5,7 +5,7 @@ import { FaPlus } from "react-icons/fa";
 function Myaccordion({ question, answer, isActive, onClick }) {
   return (
     <div 
-      className={`w-[604px] p-6 rounded-lg shadow-md transition-all duration-300 cursor-pointer ${isActive ? 'bg-[#E6E8FF]' : 'bg-white'}`} 
+      className={`w-[604px] p-6 rounded-lg shadow-md transition-all duration-300 cursor-pointer ${isActive ? 'bg-[#FFFFFF]' : 'bg-white'}`} 
       onClick={onClick}
     >
       <div className='flex justify-between items-center'>
@@ -15,8 +15,8 @@ function Myaccordion({ question, answer, isActive, onClick }) {
           <div className='w-[41.5px] h-[42.5px] rounded-lg bg-[#4A3AFF] flex items-center justify-center'>
             <FaPlus className='w-[18px] h-[2px] border-[0.3px] bg-white'/>
           </div> : 
-          <div className='w-[41.5px] h-[42.5px] rounded-lg bg-[#6F6C90] flex items-center justify-center'>
-            <FaPlus className='w-[18px] h-[18px] text-white'/>
+          <div className='w-[41.5px] h-[42.5px] rounded-lg bg-[#F7F7FF] flex items-center justify-center'>
+            <FaPlus className='w-[18px] h-[18px] text-[#6F6C90]'/>
           </div>}
         </span>
       </div>

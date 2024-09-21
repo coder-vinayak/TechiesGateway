@@ -15,6 +15,7 @@ import Hero4 from "../HomeComponents/Hero4";
 import Form from "../HomeComponents/Form";
 import Accordion from "../HomeComponents/Accordion";
 import Hero5 from "../HomeComponents/Hero5";
+import Hero6 from "../HomeComponents/Hero6";
 
 const Home = () => {
   return (
@@ -24,7 +25,7 @@ const Home = () => {
         id="img"
         className={"flex flex-col items-center h-[1158.13px] w-full mb-3 py-5"}
       >
-        <Hero1 />
+        <Hero1/>
         <Form />
       </div>
       <div className="flex flex-col gap-[36px]">
@@ -33,6 +34,8 @@ const Home = () => {
         <Hero4 />
         <Hero5/>
         <Accordion/>
+        <Hero6/>
+      
       </div>
     </div>
   );

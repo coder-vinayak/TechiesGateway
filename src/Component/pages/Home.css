@@ -65,3 +65,25 @@
 #imgC{
     background-image: url('../../assets/Ellipse3.png');
 }
+#imgD{
+    background-image: url('../../assets/apiimage.png')
+}
+#Hero6image{
+    background-image: url(../../assets/Hero6.png);
+}
+
+@media (min-width: 768px) {
+    .responsive-container {
+      width: 80%;
+      flex-direction: row;
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .responsive-container {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+  

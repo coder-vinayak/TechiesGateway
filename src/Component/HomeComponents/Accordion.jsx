@@ -14,14 +14,13 @@ function Accordion() {
     <div className='bg-[#F9F8FD] flex flex-col gap-24 w-full m-[0em] p-[0em] border-[0em] justify-center items-center'>
     <div className='flex flex-col gap-3 w-full m-[0em] p-[0em] border-[0em] justify-center items-center'>
     <div className='mt-[36px] px-6 py-3 border-0 bg-[#3D55CC1A] w-fit flex gap-[10px] rounded-[24px] text-[#3D55CC] font-[400] text-[18px] text-center leading-[21.78px]'>
-      Why choose us
+      FAQ
     </div>
     <p className='text-[#000000] font-[600] text-[32px] text-center leading-[38.73px]'>
-      Superior Social Media Solutions
+    Get the Answers You're Looking For
     </p>
     <p className='text-[#828282] font-[400] text-[18px] text-center leading-[21.78px]'>
-      Fast results, customizable options, and exceptional support. Perfect for influencers, businesses, and resellers.
-    </p>
+    Quickly find clear answers to common questions about our services. Explore below to get the information you need!    </p>
     </div>
     <div className='flex'>
     <div className='flex flex-col gap-4 p-4 justify-start items-start'>

@@ -1,29 +1,42 @@
-import React from 'react'
-import '../pages/Home.css'
+import React, { useState } from 'react';
+import '../pages/Home.css';
 
-import Navbar from '../Common/Navbar'
+import Navbar from '../Common/Navbar';
 import { CiSearch } from "react-icons/ci";
-import { FcGoogle } from "react-icons/fc";
-import { MdEmail } from "react-icons/md";
-import { FaLock } from "react-icons/fa";
-import { IoLogoFacebook } from "react-icons/io5";
-import { FaRegEyeSlash } from "react-icons/fa";
 import Highlightedtect from '../Common/Highlightedtect';
 
 function Hero1() {
+  // State to hold the input value
+  const [searchText, setSearchText] = useState('');
+
+  // Handler for input change
+  const handleInputChange = (e) => {
+    setSearchText(e.target.value);
+  };
+
   return (
-    <div className='flex flex-col h-[891px] mt-[202px] w-7/12 gap-[18px] items-center'>
-            <p className='text-[48px] leaading-[68px] m-0 text-center font-semibold'>BoostHub - <Highlightedtect text={"Supercharge"}/> Your Social Media Metrics</p>
-            <div className='flex w-[564px] h-[48px] gap-[18px] mx-auto'>
-              <div className='flex gap-10 w-[438px] h-[48px] justify-between  bg-[#F3F3F3] rounded-[48px] py-[12px] px-[24px] shadow-[0px_2px_162.9px_0px_#00000040]'>
-                <p className='leading-[21.78px] text-[18px] font-[400] text-[#828282]'>Search service for social handle...</p>
-                <CiSearch size={24}/>
-              </div>
-              <div className='bg-[#3D55CC] py-[12px] px-[24px] rounded-[48px]'>Search</div>
-            </div>
-          </div>
-    
-  )
+    <div className='flex flex-col h-auto mt-[20px] w-full px-4 gap-[18px] items-center md:h-[891px] md:mt-[202px] md:w-7/12'>
+      <p className='text-[24px] leading-[34px] m-0 text-center font-semibold md:text-[48px] md:leading-[68px]'>
+        BoostHub - <Highlightedtect text={"Supercharge"} /> Your Social Media Metrics
+      </p>
+      <div className='flex flex-col w-full gap-4 mx-auto md:flex-row md:w-[80%]'>
+        <div className='flex w-full justify-between bg-[#F3F3F3] rounded-[24px] py-[8px] px-[16px] shadow-[0px_2px_162.9px_0px_#00000040] items-center md:gap-10 md:rounded-[48px] md:py-[12px] md:px-[24px]'>
+          {/* Input field */}
+          <input
+            type="text"
+            value={searchText}
+            onChange={handleInputChange}
+            placeholder="Search service for social handle..."
+            className="w-full bg-transparent outline-none text-[14px] font-[400] text-[#828282] md:text-[18px]"
+          />
+          <CiSearch size={20} className="text-[#828282] md:text-[24px]" />
+        </div>
+        <button className='bg-[#3D55CC] py-[8px] px-[16px] rounded-[24px] text-white mt-2 md:mt-0 md:py-[12px] md:px-[24px] md:rounded-[48px] md:w-auto w-full'>
+          Search
+        </button>
+      </div>
+    </div>
+  );
 }
 
-export default Hero1
+export default Hero1;
