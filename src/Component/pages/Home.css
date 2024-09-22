@@ -13,7 +13,23 @@
 
 #img2{
     background-image: url("../../assets/LogosContainer.png");
+    background-size: cover; /* Ensure the image covers the container */
+  background-position: center; /* Center the image */
+  width: 100%; /* Make the width responsive */
+  height: 36.85px; /* The fixed height you initially set */
+  max-width: 100%;
 }
+@media (max-width: 768px) {
+    #img2 {
+      height: 30px; /* Adjust height for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #img2 {
+      height: 25px; /* Further adjust for very small screens */
+    }
+  }
 
 #img3{
     background-image: url("../../assets/Group\ 1000003566.png");
@@ -84,6 +100,32 @@
     .responsive-container {
       width: 100%;
       flex-direction: column;
+    }
+  }
+  
+  /* Add media queries to make elements responsive if needed */
+@media screen and (max-width: 1024px) {
+    /* Styles for medium screens, tablets */
+    #img {
+      height: auto;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    /* Styles for small screens, phones */
+    .form {
+      flex-direction: column;
+    }
+    
+    .hero-content {
+      text-align: center;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    /* Styles for extra small screens */
+    .form {
+      width: 100%;
     }
   }
   
