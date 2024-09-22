@@ -10,48 +10,46 @@ function Accordion() {
   };
 
   return (
-<>
-    <div className='bg-[#F9F8FD] flex flex-col gap-24 w-full m-[0em] p-[0em] border-[0em] justify-center items-center'>
-    <div className='flex flex-col gap-3 w-full m-[0em] p-[0em] border-[0em] justify-center items-center'>
-    <div className='mt-[36px] px-6 py-3 border-0 bg-[#3D55CC1A] w-fit flex gap-[10px] rounded-[24px] text-[#3D55CC] font-[400] text-[18px] text-center leading-[21.78px]'>
-      FAQ
-    </div>
-    <p className='text-[#000000] font-[600] text-[32px] text-center leading-[38.73px]'>
-    Get the Answers You're Looking For
-    </p>
-    <p className='text-[#828282] font-[400] text-[18px] text-center leading-[21.78px]'>
-    Quickly find clear answers to common questions about our services. Explore below to get the information you need!    </p>
-    </div>
-    <div className='flex'>
-    <div className='flex flex-col gap-4 p-4 justify-start items-start'>
-      {questions.map((item, index) => (
-        index<3 &&
-        <Myaccordion 
-          key={item.id}
-          question={item.question} 
-          answer={item.answer}
-          isActive={activeIndex === index}
-          onClick={() => toggleAccordion(index)}
-        />
-      ))}
-      
-    </div>
-    <div className='flex flex-col gap-4 p-4 justify-start items-start'>
-      {questions.map((item, index) => (
-        index>=3 &&
-        <Myaccordion 
-          key={item.id}
-          question={item.question} 
-          answer={item.answer}
-          isActive={activeIndex === index}
-          onClick={() => toggleAccordion(index)}
-        />
-      ))}
-      
-    </div>
-    </div>
-    
-    </div>
+    <>
+      <div className="bg-[#F9F8FD] flex flex-col gap-12 md:gap-24 w-full justify-center items-center px-4 py-8">
+        <div className="flex flex-col gap-3 justify-center items-center text-center">
+          <div className="mt-9 px-6 py-3 bg-[#3D55CC1A] w-fit flex gap-2 rounded-3xl text-[#3D55CC] font-medium text-lg leading-tight">
+            FAQ
+          </div>
+          <p className="text-[#000000] font-semibold text-xl md:text-2xl lg:text-3xl leading-tight">
+            Get the Answers You're Looking For
+          </p>
+          <p className="text-[#828282] font-normal text-sm md:text-lg leading-snug">
+            Quickly find clear answers to common questions about our services. Explore below to get the information you need!
+          </p>
+        </div>
+
+        {/* Accordion Sections */}
+        <div className="flex flex-col md:flex-row gap-6 w-full max-w-screen-lg justify-center items-start">
+          <div className="flex flex-col gap-4 w-full md:w-1/2">
+            {questions.slice(0, 3).map((item, index) => (
+              <Myaccordion 
+                key={item.id}
+                question={item.question} 
+                answer={item.answer}
+                isActive={activeIndex === index}
+                onClick={() => toggleAccordion(index)}
+              />
+            ))}
+          </div>
+          <div className="flex flex-col gap-4 w-full md:w-1/2">
+            {questions.slice(3).map((item, index) => (
+              <Myaccordion 
+                key={item.id}
+                question={item.question} 
+                answer={item.answer}
+                isActive={activeIndex === index + 3}
+                onClick={() => toggleAccordion(index + 3)}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
     </>
   );
 }

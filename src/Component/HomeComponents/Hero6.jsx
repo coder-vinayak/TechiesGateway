@@ -33,7 +33,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <div id='Hero6image' className="relative h-full w-full bg-gray-100 py-10">
+    <div id='Hero6image' className="relative h-full w-full bg-gray-100 py-10 md:py-16">
       <div className='flex flex-col items-center gap-3'>
         <div className='px-6 py-3 bg-indigo-50 w-fit flex gap-2 rounded-2xl text-indigo-600 font-medium text-lg'>
           Testimonials
@@ -42,28 +42,30 @@ const Testimonials = () => {
 
       {/* Testimonial Slider */}
       <div className="text-center mt-8">
-        <h2 className="text-3xl font-semibold text-gray-900">
+        <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
           What Our Clients Say
         </h2>
-        <p className="text-gray-600 text-base mt-2 mb-8">
+        <p className="text-gray-600 text-sm md:text-base mt-2 mb-6 md:mb-8 px-4 max-w-xl mx-auto">
           Discover how our fast results and top support have elevated social media for our clients.
         </p>
 
         {/* Slick slider */}
-        <Slider {...settings}>
-          {testimonials.map((testimonial, index) => (
-            <div key={index} className="px-6">
-              <img
-                src={testimonial.avatar}
-                alt={testimonial.name}
-                className="w-16 h-16 rounded-full mx-auto mb-4"
-              />
-              <h3 className="text-lg font-bold">{testimonial.name}</h3>
-              <p className="text-sm text-gray-500">{testimonial.profession}</p>
-              <p className="mt-4 text-gray-700">{testimonial.text}</p>
-            </div>
-          ))}
-        </Slider>
+        <div className="max-w-md mx-auto px-4"> {/* Centered slider */}
+          <Slider {...settings}>
+            {testimonials.map((testimonial, index) => (
+              <div key={index} className="flex flex-col items-center text-center p-4">
+                <img
+                  src={testimonial.avatar}
+                  alt={testimonial.name}
+                  className="w-16 h-16 md:w-20 md:h-20 rounded-full mb-4"
+                />
+                <h3 className="text-lg md:text-xl font-bold">{testimonial.name}</h3>
+                <p className="text-sm text-gray-500">{testimonial.profession}</p>
+                <p className="mt-4 text-gray-700 text-sm md:text-base">{testimonial.text}</p>
+              </div>
+            ))}
+          </Slider>
+        </div>
       </div>
     </div>
   );
