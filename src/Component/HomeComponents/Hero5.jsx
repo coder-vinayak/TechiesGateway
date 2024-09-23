@@ -4,7 +4,7 @@ import "../pages/Home.css";
 
 function Hero5() {
   return (
-    <div className="w-full  h-[889px] flex flex-col lg:flex-row sm:h-auto gap-[50px] bg-[#FFFFFF] py-[50px] pl-[10px] items-center overflow-hidden">
+    <div className="w-full h-auto  lg:h-[889px] flex flex-col lg:flex-row gap-[50px] bg-[#FFFFFF] py-[50px] pl-[10px] items-center overflow-hidden">
       <div className="flex flex-col items-start justify-center w-full py-10 px-8 lg:px-20">
         {/* Reseller Badge */}
         <div className="w-full">
@@ -29,13 +29,13 @@ function Hero5() {
           {/* API Integration Boxes */}
           <div className="flex flex-col gap-6">
             {/* Box 1 */}
-            <div className="bg-white flex gap-5 shadow-lg rounded-lg p-6 h-[128px] w-[669px] text-left">
+            <div className="bg-white flex gap-5 shadow-lg rounded-lg p-6 w-[334px] lg:h-[128px] lg:w-[669px] text-left">
               <img
                 src={imga}
                 alt="API Icon"
-                className="w-[64px] h-[64px] rounded-[8px] shadow-[0px_12px_112px_0px_#00000029] mb-4"
+                className="w-[64px] h-[64px] rounded-[8px]  shadow-[0px_12px_112px_0px_#00000029] mb-4"
               />
-              <div>
+              <div className="flex flex-col">
                 <p className="font-bold text-[18px] text-gray-800">
                   API Integration
                 </p>
@@ -47,13 +47,13 @@ function Hero5() {
             </div>
 
             {/* Box 2 */}
-            <div className="bg-white flex gap-5 shadow-lg rounded-lg p-6 h-[128px] w-[669px] text-left">
+            <div className="bg-white flex gap-5 w-[334px] shadow-lg rounded-lg p-6 lg:h-[128px] lg:w-[669px] text-left">
               <img
                 src={imga}
                 alt="API Icon"
                 className="w-[64px] h-[64px] rounded-[8px] shadow-[0px_12px_112px_0px_#00000029] mb-4"
               />
-              <div>
+              <div >
                 <p className="font-bold text-[18px] text-gray-800">
                   Manage Clients
                 </p>
