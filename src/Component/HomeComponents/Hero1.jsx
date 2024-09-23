@@ -12,7 +12,7 @@ function Hero1() {
 
   return (
     <div 
-      className='flex flex-col h-auto w-full px-4 gap-[18px] items-center md:h-[891px] md:mt-[202px] md:w-7/12 mt-[80px]' // Add margin-top here
+      className='flex flex-col h-auto w-full px-4 gap-[18px] items-center md:h-[891px] md:mt-[100px] md:w-7/12 mt-[40px]' // Reduced margin-top here
     >
       <p className='text-[24px] leading-[34px] m-0 text-center font-semibold md:text-[48px] md:leading-[68px]'>
         BoostHub - <Highlightedtect text={"Supercharge"} /> Your Social Media Metrics

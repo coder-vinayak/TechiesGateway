@@ -6,10 +6,24 @@
       border-radius: 24px;
     }
       
-#img {
+/* #img {
     background-image: url("../../assets/home.png");
     background-size: cover;
+} */
+#img {
+  background: url("../../assets/home.png") no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: auto; /* Ensure it adjusts height based on content */
 }
+
+@media only screen and (max-width: 768px) {
+  #img {
+    background-position: top center; /* Adjust the position of the background */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+}
+
 
 #img2{
     background-image: url("../../assets/LogosContainer.png");
@@ -141,3 +155,21 @@
       background-size: 100%;
   }
   
+
+  /* Default background for larger screens */
+#testimonials-section {
+  background-image: url('../../assets/Hero6.png'); /* Desktop background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  #testimonials-section {
+    background-image: url('../../assets/Testimonial\ img.png'); /* Mobile background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
