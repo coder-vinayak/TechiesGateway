@@ -4,7 +4,7 @@ import "../pages/Home.css";
 
 function Hero5() {
   return (
-    <div className="w-full  h-[889px] flex gap-[50px] bg-[#FFFFFF] py-[50px] pl-[10px] items-center overflow-hidden">
+    <div className="w-full  h-[889px] flex flex-row sm:h-auto gap-[50px] bg-[#FFFFFF] py-[50px] pl-[10px] items-center overflow-hidden">
       <div className="flex flex-col items-start justify-center w-full py-10 px-8 lg:px-20">
         {/* Reseller Badge */}
         <div className="w-full">
@@ -69,7 +69,7 @@ function Hero5() {
           </div>
         </div>
       </div>
-      <div className="hidden lg:flex justify-start">
+      <div className="flex justify-start">
         <div id="hero5img" className=" bg-gray-300"></div>
       </div>
     </div>
