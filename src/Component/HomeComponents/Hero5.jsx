@@ -1,10 +1,12 @@
 import React from 'react';
+import imga from "../../assets/apiimage.png"
+import '../pages/Home.css';
 
 function Hero5() {
   return (
     <div className="flex flex-col items-center justify-center w-full bg-gray-100 py-10">
       {/* Reseller Badge */}
-      <div className="mt-4 px-6 py-3 bg-[#3D55CC1A] rounded-[24px] text-[#3D55CC] font-medium text-[18px] text-center">
+      <div className="mt-4 w-[200px] px-6 py-3 bg-[#3D55CC1A] rounded-[24px] text-[#3D55CC] font-medium text-[18px] text-center">
         Reseller
       </div>
 
@@ -24,7 +26,8 @@ function Hero5() {
         <div className="flex flex-col gap-6">
           {/* Box 1 */}
           <div className="bg-white shadow-lg rounded-lg p-6 w-full lg:w-[300px] text-center">
-            <img src="/path_to_image1" alt="API Icon" className="w-12 mx-auto mb-4" /> {/* Replace with your icon */}
+            {/* <img src={imga} alt="API Icon" className="w-12 mx-auto mb-4" /> Replace with your icon */}
+            <div id='haha' ></div>
             <p className="font-bold text-[18px] text-gray-800">API Integration</p>
             <p className="text-gray-500 text-[16px] mt-2">
               Seamless integration with your website or platform, automating orders with ease.
@@ -33,7 +36,7 @@ function Hero5() {
 
           {/* Box 2 */}
           <div className="bg-white shadow-lg rounded-lg p-6 w-full lg:w-[300px] text-center">
-            <img src="/path_to_image2" alt="API Icon" className="w-12 mx-auto mb-4" /> {/* Replace with your icon */}
+            <img src={imga} alt="API Icon" className="w-12 mx-auto mb-4 object-contain" /> {/* Replace with your icon */}
             <p className="font-bold text-[18px] text-gray-800">API Integration</p>
             <p className="text-gray-500 text-[16px] mt-2">
               Manage multiple clients efficiently with our integrated API services.
@@ -42,7 +45,7 @@ function Hero5() {
         </div>
 
         {/* Dashboard Image */}
-        <div className="hidden lg:block">
+        <div className="hidden lg:flex">
        <div id='imgD' className='className="w-12 mx-auto mb-4"'></div>
         </div>
       </div>

@@ -129,3 +129,13 @@
     }
   }
   
+  #haha{
+    
+      background-image: url('../../assets/apiimage.png');
+      width: 386.43px;
+      height: 297.04px;
+      margin-top: -20px;
+      background-size: cover;
+      background-size: 100%;
+  }
+  
