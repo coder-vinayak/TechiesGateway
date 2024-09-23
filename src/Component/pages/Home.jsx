@@ -73,7 +73,7 @@ const Home = () => {
         <Hero1 />
         <Form />
       </div>
-      <div className="flex flex-col gap-[36px] px-4 lg:px-16 md:px-8">
+      <div className="flex flex-col ">
         <Hero2 />
         <Hero3 />
         <Hero4 />

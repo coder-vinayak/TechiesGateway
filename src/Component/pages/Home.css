@@ -66,7 +66,7 @@
 #img7{
     background-image: url("../../assets/Group\ 1000003530.png");
     width: 352.4px;
-    height: 100%;
+    height: 297px;
     margin-top: -116px;
     background-size: cover;
     background-size: 100%;
@@ -84,8 +84,8 @@
 #hero5img{
     background-image: url('../../assets/Hero5image.png');
     background-size: cover;
-    width: 100%;
-    height: 100%;
+    height:486px;
+    width:611px;
 }
 #Hero6image{
     background-image: url('../../assets/Hero6.png');
@@ -133,7 +133,7 @@
   }
   
   #haha{
-      background-image: url('../../assets/apiimage.png');
+      background-image: url('../../assets/Apiimage.png');
       width: 686.43px;
       height: 497.04px;
       margin-top: -20px;

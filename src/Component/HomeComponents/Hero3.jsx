@@ -40,8 +40,8 @@ function Hero3() {
         </div>
 
         {/* Card 3 */}
-        <div className='gradient-border w-full md:w-[342px] h-auto flex justify-center items-center'>
-          <div className='w-full md:w-[341px] h-auto rounded-[24px] justify-center items-center pt-4 flex flex-col gap-[10px] bg-[#F9F9FF] overflow-hidden'>
+        <div className='gradient-border w-full md:w-[342px] overflow-hidden max-h-[380px] flex justify-center items-center'>
+          <div className='w-full md:w-[341px] h-[379px] rounded-[24px] justify-center items-center pt-4 flex flex-col gap-[10px] bg-[#F9F9FF] overflow-hidden'>
             <p className='font-[600] text-[24px] md:text-[32px] leading-[28px] md:leading-[38.73px] mt-2'>API Integration</p>
             <p className='text-[#6F6C8F] font-[400] text-[16px] md:text-[18px] leading-[19px] md:leading-[21.78px] w-[90%] md:w-[283px] mt-2 h-auto'>
               API support for developers and resellers to integrate the panel’s services into their own platforms.
@@ -51,8 +51,8 @@ function Hero3() {
         </div>
 
         {/* Card 4 */}
-        <div className='gradient-border w-full md:w-[484px] h-auto flex justify-center items-center'>
-          <div className='w-full md:w-[483px] h-auto rounded-[24px] justify-center items-center pt-4 flex flex-col gap-[10px] bg-[#F9F9FF] overflow-hidden'>
+        <div className='gradient-border w-full md:w-[484px] overflow-hidden max-h-[380px] flex justify-center items-center'>
+          <div className='w-full md:w-[483px] h-[379px] rounded-[24px] justify-center items-center pt-4 flex flex-col gap-[10px] bg-[#F9F9FF] overflow-hidden'>
             <p className='font-[600] text-[24px] md:text-[32px] leading-[28px] md:leading-[38.73px] mt-2'>Secure and Confidential</p>
             <p className='text-[#6F6C8F] font-[400] text-[16px] md:text-[18px] leading-[19px] md:leading-[21.78px] w-[90%] md:w-[409px] mt-2 h-auto'>
               Secure payment gateways and strict privacy policies to protect user information.
@@ -62,8 +62,8 @@ function Hero3() {
         </div>
 
         {/* Card 5 */}
-        <div className='gradient-border w-full md:w-[342px] h-auto flex justify-center items-center'>
-  <div className='w-full md:w-[341px] h-auto rounded-[24px] justify-center items-center pt-4 flex flex-col gap-[10px] bg-[#F9F9FF] overflow-hidden'>
+        <div className='gradient-border w-full md:w-[342px] overflow-hidden max-h-[380px] flex justify-center items-center'>
+  <div className='w-full md:w-[341px] h-[379px] rounded-[24px] justify-center items-center pt-4 flex flex-col gap-[10px] bg-[#F9F9FF] overflow-hidden'>
     <p className='font-[600] text-[24px] md:text-[32px] leading-[28px] md:leading-[38.73px] mt-2 text-center'>
       Customizable Service Packages
     </p>
