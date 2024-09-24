@@ -2,7 +2,7 @@ import React from 'react'
 
 function Hero3() {
   return (
-    <div className='flex flex-col gap-[36px]'>
+    <div className='flex flex-col gap-[36px] m-3 lg:m-0'>
       <div className='flex flex-col gap-3 w-full m-[0em] p-[0em] border-[0em] justify-center items-center'>
         <div className='mt-[36px] px-6 py-3 border-0 bg-[#3D55CC1A] w-fit flex gap-[10px] rounded-[24px] text-[#3D55CC] font-[400] text-[18px] text-center leading-[21.78px]'>
           Features
