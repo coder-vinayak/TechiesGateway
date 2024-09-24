@@ -6,6 +6,7 @@ import { FcGoogle } from "react-icons/fc";
 import { IoLogoFacebook } from "react-icons/io5";
 import { FaRegEyeSlash, FaRegEye } from "react-icons/fa"; // Import both open and closed eye icons
 import Highlightedtect from '../Common/Highlightedtect';
+import { Link } from 'react-router-dom';
 
 function Form() {
   const [showPassword, setShowPassword] = useState(false); // State to toggle password visibility
@@ -94,7 +95,7 @@ function Form() {
 
             {/* Sign Up Prompt */}
             <p className='text-[#828282] font-[400] text-[16px] md:text-[18px] leading-[19px] md:leading-[21.78px] text-center'>
-              Don’t have an account? <Highlightedtect className='font-[500]' text={'Sign up'} />
+              Don’t have an account? <Link to="/signup">  <Highlightedtect className='font-[500]' text={'Sign up'} /> </Link>
             </p>
           </div>
         </div>
