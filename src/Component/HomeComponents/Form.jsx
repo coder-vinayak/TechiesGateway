@@ -95,7 +95,7 @@ function Form() {
 
             {/* Sign Up Prompt */}
             <p className='text-[#828282] font-[400] text-[16px] md:text-[18px] leading-[19px] md:leading-[21.78px] text-center'>
-              Don’t have an account? <Link to="/signup">  <Highlightedtect className='font-[500]' text={'Sign up'} /> </Link>
+              Don’t have an account?   <Highlightedtect className='font-[500]' text={'Sign up'} /> 
             </p>
           </div>
         </div>

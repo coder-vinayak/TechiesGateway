@@ -131,7 +131,7 @@ const SignUp = () => {
           </button>
         </div>
 
-        <p className="text-center mt-4">Already have an account? <Link to="/"><Highlightedtect text={"Login"} /></Link></p>
+        <p className="text-center mt-4">Already have an account? <Highlightedtect text={"Login"} /></p>
       </form>
     </div>
   );
