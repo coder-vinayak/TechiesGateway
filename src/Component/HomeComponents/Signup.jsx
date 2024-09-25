@@ -34,8 +34,8 @@ const SignUp = ({toggleForm}) => {
 
 
   return (
-    <div className="signup-container flex items-center justify-center px-8 md:px-16 lg:px-24 py-5 w-full max-w-[746px] rounded-[24px] bg-[#F6F6F6] shadow-[0px_8px_48px_0px_#00000014] mx-auto">
-      <form className="signup-form w-full" onSubmit={handleSubmit}>
+<div className="signup-container flex items-center justify-center px-8 md:px-16 lg:px-24 py-5 w-full max-w-[746px] rounded-[24px] bg-[#F6F6F6] shadow-[0px_8px_48px_0px_#00000014] mx-auto mt-2">
+<form className="signup-form w-full" onSubmit={handleSubmit}>
         {/* Main Heading */}
         <h1 className='font-semibold text-center text-2xl mb-2'>Sign up to <Highlightedtect text={'SMM panel'} /></h1>
         <p className='font-extralight text-center mb-6'>Boost your social media effortlessly with our fast, affordable SMM panel!</p>
