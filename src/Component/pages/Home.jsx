@@ -52,7 +52,7 @@ import Hero5 from "../HomeComponents/Hero5";
 import Hero6 from "../HomeComponents/Hero6";
 import Accordion from "../HomeComponents/Accordion";
 import Form from "../HomeComponents/Form"; // Login Form
-import SignUp from "../SignupComponent/SignupForm";
+import SignUp from "../HomeComponents/Signup";
 // Signup Form
 
 const Home = () => {
@@ -61,7 +61,7 @@ const Home = () => {
 
   // Step 2: Toggle function to switch forms
   const toggleForm = () => {
-    setShowLogin((prevShowLogin) => !prevShowLogin);
+    setShowLogin(!showLogin);
   };
 
   return (

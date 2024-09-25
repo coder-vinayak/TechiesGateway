@@ -1,13 +1,13 @@
 import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
-import '../SignupComponent/Signup.css';
+import './Signup.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faEnvelope, faPhone, faLock, faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 import Highlightedtect from '../Common/Highlightedtect';
 import { FcGoogle } from "react-icons/fc";
 
-const SignUp = () => {
+const SignUp = ({toggleForm}) => {
   const [formData, setFormData] = useState({
     username: '',
     email: '',
@@ -131,7 +131,7 @@ const SignUp = () => {
           </button>
         </div>
 
-        <p className="text-center mt-4">Already have an account? <Highlightedtect text={"Login"} /></p>
+        <p className="text-center mt-4">Already have an account? <button onClick={toggleForm}><Highlightedtect text={"Login"}  /></button></p>
       </form>
     </div>
   );

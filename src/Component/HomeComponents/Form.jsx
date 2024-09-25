@@ -8,7 +8,7 @@ import { FaRegEyeSlash, FaRegEye } from "react-icons/fa"; // Import both open an
 import Highlightedtect from '../Common/Highlightedtect';
 import { Link } from 'react-router-dom';
 
-function Form() {
+function Form({toggleForm}) {
   const [showPassword, setShowPassword] = useState(false); // State to toggle password visibility
 
   const togglePasswordVisibility = () => {
@@ -95,7 +95,7 @@ function Form() {
 
             {/* Sign Up Prompt */}
             <p className='text-[#828282] font-[400] text-[16px] md:text-[18px] leading-[19px] md:leading-[21.78px] text-center'>
-              Don’t have an account?   <Highlightedtect className='font-[500]' text={'Sign up'} /> 
+              Don’t have an account?   <button onClick={toggleForm}><Highlightedtect className='font-[500]'  text={'Sign up'} /></button> 
             </p>
           </div>
         </div>
