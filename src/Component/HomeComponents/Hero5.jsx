@@ -1,5 +1,5 @@
 import React from "react";
-import imga from "../../assets/Apiimage.png";
+import imga from "../../assets/apiimage.png";
 import "../pages/Home.css";
 
 function Hero5() {
@@ -53,7 +53,7 @@ function Hero5() {
                 alt="API Icon"
                 className="w-[64px] h-[64px] rounded-[8px] shadow-[0px_12px_112px_0px_#00000029] mb-4"
               />
-              <div >
+              <div>
                 <p className="font-bold text-[18px] text-gray-800">
                   Manage Clients
                 </p>
