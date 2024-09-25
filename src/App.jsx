@@ -8,10 +8,8 @@ import Signup from "./Component/pages/Signup";
 const App = () => {
   return (
     <div>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/signup" element={<Signup />} />
-      </Routes>
+      <Home/>
+      <Signup/>
     </div>
   );
 };
