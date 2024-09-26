@@ -30,8 +30,8 @@ function App() {
       </Routes> */}
 
 <Forgotpass/>  
- {/* <OtpVerification/> 
-      <Reset/> */}
+ <OtpVerification/> 
+      <Reset/>
 
       
       <Footer />
