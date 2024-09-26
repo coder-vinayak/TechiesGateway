@@ -11,6 +11,8 @@ import ErrorPage from "./Component/pages/ErrorPage";
 import Navbar from "./Component/Common/Navbar";
 import Footer from "./Component/Common/Footer";
 import Forgotpass from "./Component/pages/Forgotpass";
+import Reset from "./Component/pages/Reset";
+import OtpVerification from "./Component/pages/OtpVerification";
 
 function App() {
   return (
@@ -26,8 +28,12 @@ function App() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes> */}
-      <Forgotpass/>
 
+<Forgotpass/>  
+ {/* <OtpVerification/> 
+      <Reset/> */}
+
+      
       <Footer />
     </BrowserRouter>
   );

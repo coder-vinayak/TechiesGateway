@@ -36,11 +36,11 @@ function Forgotpass() {
             {/* Email Input */}
             <div className="forgotpass-form">
               <div className="relative">
-                <FaEnvelope className="absolute left-[52px]  top-[45px] transform -translate-y-1/2 text-gray-400" />
+                <FaEnvelope className=" text-[#3D55CC] absolute left-[50px]  top-[45px] transform -translate-y-1/2 " />
                 <input
                   type="email"
                   placeholder="Username/ Email"
-                  className="forgotpass-input pl-14"
+                  className="forgotpass-input pl-16"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   
@@ -66,7 +66,7 @@ function Forgotpass() {
     <FcGoogle size={24} className="mr-2" /> Login with Google
   </button>
   <button className="flex items-center justify-center border border-gray-300 py-2 px-4 rounded-lg w-full hover:bg-gray-100">
-    <FaFacebook size={24} className="mr-2" /> Login with Facebook
+    <FaFacebook size={24} className="mr-2 text-[#3D55CC]" /> Login with Facebook
   </button>
 </div>
 
