@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaLock, FaEye, FaEyeSlash } from 'react-icons/fa'; // Importing FontAwesome icons
+import { FaLock, FaEye, FaEyeSlash } from 'react-icons/fa'; 
 
 function Reset() {
   const [password, setPassword] = useState('');
@@ -10,12 +10,12 @@ function Reset() {
 
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
-    setError('');  // Clear error when user starts typing
+    setError(''); 
   };
 
   const handleConfirmPasswordChange = (e) => {
     setConfirmPassword(e.target.value);
-    setError('');  // Clear error when user starts typing
+    setError(''); 
   };
 
   const handleSubmit = (e) => {
@@ -63,7 +63,7 @@ function Reset() {
                 </span>
               </div>
 
-              {/* Confirm Password Input */}
+         
               <div className="relative mb-4">
                 <label className="block text-gray-600 mb-1">Confirm Password</label>
                 <FaLock className="absolute left-3 top-12 transform -translate-y-1/2 text-[#3D55CC]" />
@@ -82,10 +82,10 @@ function Reset() {
                 </span>
               </div>
 
-              {/* Error Message */}
+            
               {error && <p className="text-red-500 text-sm mb-4">{error}</p>}
 
-              {/* Centered Submit Button */}
+             
               <div className="flex justify-center">
                 <button
                   type="submit"

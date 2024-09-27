@@ -19,7 +19,7 @@ function App() {
     <BrowserRouter>
       <Navbar />
       
-      {/* <Routes>
+      <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/service" element={<Service />} />
@@ -27,13 +27,12 @@ function App() {
         <Route path="/terms" element={<Terms />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="*" element={<ErrorPage />} />
-      </Routes> */}
+        <Route path="/otpverification" element={<OtpVerification />} />
+        <Route path="/reset" element={<Reset />} />
+        <Route path="/forgotpassword" element={<Forgotpass />} />
+      </Routes>
 
-<Forgotpass/>  
- <OtpVerification/> 
-      <Reset/>
 
-      
       <Footer />
     </BrowserRouter>
   );
