@@ -13,6 +13,7 @@ import Footer from "./Component/Common/Footer";
 import Forgotpass from "./Component/pages/Forgotpass";
 import Reset from "./Component/pages/Reset";
 import OtpVerification from "./Component/pages/OtpVerification";
+import ForgotToggle from "./Component/pages/ForgotToggle";
 
 function App() {
   return (
@@ -27,9 +28,9 @@ function App() {
         <Route path="/terms" element={<Terms />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="*" element={<ErrorPage />} />
-        <Route path="/otpverification" element={<OtpVerification />} />
-        <Route path="/reset" element={<Reset />} />
-        <Route path="/forgotpassword" element={<Forgotpass />} />
+        {/* <Route path="/otpverification" element={<OtpVerification />} />
+        <Route path="/reset" element={<Reset />} /> */}
+        <Route path="/forgotpassword" element={<ForgotToggle />} />
       </Routes>
 
 

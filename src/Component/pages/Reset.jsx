@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaLock, FaEye, FaEyeSlash } from 'react-icons/fa'; 
+import { useNavigate } from 'react-router-dom';
 
 function Reset() {
   const [password, setPassword] = useState('');
@@ -7,7 +8,7 @@ function Reset() {
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [error, setError] = useState('');
-
+  const navigate = useNavigate();
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
     setError(''); 
@@ -25,7 +26,9 @@ function Reset() {
     } else {
       setError('');
       alert('Password reset successful');
+      navigate('/')
     }
+
   };
 
   return (

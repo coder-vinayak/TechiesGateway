@@ -1,5 +1,5 @@
 import React from "react";
-import imga from "../../assets/apiimage.png"
+import imga from "../../assets/Apiimage.png"
 import "../pages/Home.css";
 
 function Hero5() {
