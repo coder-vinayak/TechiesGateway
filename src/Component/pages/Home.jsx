@@ -11,14 +11,7 @@ import Form from "../HomeComponents/Form"; // Login Form
 import SignUp from "../HomeComponents/Signup";
 // Signup Form
 import "./Home.css";
-// import { CiSearch } from "react-icons/ci";
-// import { FcGoogle } from "react-icons/fc";
-// import { MdEmail } from "react-icons/md";
-// import { FaLock } from "react-icons/fa";
-// import { IoLogoFacebook } from "react-icons/io5";
-// import { FaRegEyeSlash } from "react-icons/fa";
-// import Highlightedtect from "../Common/Highlightedtect";
-// import Footer from "../Common/Footer";
+
 
 const Home = () => {
   // Step 1: Create state to toggle between Login and Signup

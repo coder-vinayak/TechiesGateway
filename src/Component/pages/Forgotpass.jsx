@@ -69,7 +69,6 @@ function Forgotpass() {
     <FaFacebook size={24} className="mr-2 text-[#3D55CC]" /> Login with Facebook
   </button>
 </div>
-
           </div>
         </div>
       </div>
