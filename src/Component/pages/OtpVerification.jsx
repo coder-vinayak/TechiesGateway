@@ -78,7 +78,7 @@ const OtpVerification = () => {
                   />
                 ))}
               </div>
-              <button className="otp-submit-btn">
+              <button type="submit" className="otp-submit-btn">
                 Verify
               </button>
             </form>

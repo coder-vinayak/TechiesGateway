@@ -67,9 +67,7 @@ function Form({toggleForm}) {
                 <input type='checkbox' />
                 <p className='font-[400] text-[14px] md:text-[18px] leading-[19px] md:leading-[21.78px] text-[#828282]'>Remember me</p>
               </div>
-              <p className='text-[#3D55CC] text-[14px] md:text-[18px]'>
-  <Link to="/forgotpassword">Forget Password?</Link>
-</p>
+              <p className='text-[#3D55CC] text-[14px] md:text-[18px]'>Forget Password?</p>
             </div>
 
             {/* Login Button */}
