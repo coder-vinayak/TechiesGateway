@@ -6,15 +6,17 @@ import { FcGoogle } from "react-icons/fc";
 import { IoLogoFacebook } from "react-icons/io5";
 import { FaRegEyeSlash, FaRegEye } from "react-icons/fa"; // Import both open and closed eye icons
 import Highlightedtect from '../Common/Highlightedtect';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function Form({toggleForm}) {
   const [showPassword, setShowPassword] = useState(false); // State to toggle password visibility
-
+  const navigate = useNavigate();
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
   };
-
+  function forgetHandler() {
+    navigate('/forgotpassword')
+  }
   return (
     <div className='flex items-center justify-center p-5 w-full max-w-[746px] rounded-[24px] bg-[#F6F6F6] shadow-[0px_8px_48px_0px_#00000014] mx-auto'>
       <div className='flex flex-col w-full max-w-[587px] h-auto gap-[24px] md:gap-[36px] justify-start items-center'>
@@ -67,7 +69,7 @@ function Form({toggleForm}) {
                 <input type='checkbox' />
                 <p className='font-[400] text-[14px] md:text-[18px] leading-[19px] md:leading-[21.78px] text-[#828282]'>Remember me</p>
               </div>
-              <p className='text-[#3D55CC] text-[14px] md:text-[18px]'>Forget Password?</p>
+              <button className='text-[#3D55CC] text-[14px] md:text-[18px]' onClick={forgetHandler}>Forget Password?</button>
             </div>
 
             {/* Login Button */}

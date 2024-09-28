@@ -8,12 +8,14 @@ import { FaFacebook } from "react-icons/fa6";
 import './Forgotpass.css'; 
 import { FaGoogle,  FaEnvelope } from 'react-icons/fa';
 
-function Forgotpass() {
+function Forgotpass({setFp,setOv}) {
   const [email, setEmail] = useState("");
 
   const handleSendOTP = () => {
    
     console.log("OTP sent to:", email);
+    setFp(false);
+    setOv(true);
   };
 
   return (

@@ -3,7 +3,7 @@ import Highlightedtect from '../Common/Highlightedtect';
 import './OtpVerification.css';
 import Navbar from '../Common/Navbar';
 
-const OtpVerification = () => {
+const OtpVerification = ({setOv,setR}) => {
   const [otp, setOtp] = useState(new Array(4).fill(""));
 
   const handleChange = (element, index) => {
@@ -46,6 +46,8 @@ const OtpVerification = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     alert(`Entered OTP is ${otp.join("")}`);
+    setOv(false);
+    setR(true);
   };
 
   return (
