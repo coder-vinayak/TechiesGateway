@@ -18,7 +18,7 @@ const Sidebar = ({ darkMode }) => {
     <div
       className={`d-flex flex-column vh-100 p-2`}
       style={{
-        width: '180px', // Increase the sidebar width here
+        width: '280px', // Increase the sidebar width here
         backgroundColor: darkMode ? '#343a40' : '#ffffff', // Sidebar background color
       }}
     >

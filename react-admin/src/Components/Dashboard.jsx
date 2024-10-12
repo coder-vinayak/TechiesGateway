@@ -29,7 +29,7 @@ const Dashboard = () => {
         <DashboardMainContent />
 
 
-        <div className="row">
+        <div className="row ">
           <div className="col-md-6">
             <PieChart/>
           </div>
