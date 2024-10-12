@@ -91,7 +91,7 @@ function Login() {
                         or
                       </span>
                     </div>
-                    <div className="d-flex align-items-center justify-content-center gap-2">
+                    {/* <div className="d-flex align-items-center justify-content-center gap-2">
                       <a
                         href="javascript:void(0);"
                         className="btn btn-light-brand flex-fill"
@@ -119,7 +119,7 @@ function Login() {
                       >
                         <i className="feather-github"></i>
                       </a>
-                    </div>
+                    </div> */}
                   </div>
                   <div className="mt-5 text-muted">
                     <span> Don't have an account?</span>

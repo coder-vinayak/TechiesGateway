@@ -5,6 +5,7 @@ import DashboardMainContent from './DashboardMainContent';
 import TopUsers from '../Components/TopUsers'; // Import TopUsers
 import 'bootstrap/dist/css/bootstrap.min.css';
 import PieChart from '../Components/Piechart';
+import DashboardTable from './DashboardTable';
 
 const Dashboard = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -34,6 +35,9 @@ const Dashboard = () => {
           </div>
           <div className="col-md-6">
             <TopUsers />
+          </div>
+          <div >
+            <DashboardTable />
           </div>
         </div>
       </div>

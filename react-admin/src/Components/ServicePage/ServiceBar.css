@@ -1,0 +1,18 @@
+
+  
+  /* Modal overlay with a semi-transparent background */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1040; /* Slightly lower than the modal */
+  }
+  
+  /* This class is applied to the body when the modal is open */
+  .modal-open {
+    overflow: hidden;
+  }
+  

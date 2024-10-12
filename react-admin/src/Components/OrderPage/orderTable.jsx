@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Table, Form, Pagination, ButtonGroup, Button } from 'react-bootstrap';
+import { Table, Form, Pagination, ButtonGroup, Button, Dropdown } from 'react-bootstrap';
+import { BsThreeDots } from 'react-icons/bs'; // Icon for actions
 
 const OrderTable = () => {
   // Dummy data for the table
@@ -11,6 +12,9 @@ const OrderTable = () => {
     service: 'Google maps reviews | 20 Reviews Package | Text Review only (Read Description) 🔥',
     charge: '₹6k',
     date: '2023-04-05',
+    status: 'Completed', // Assuming status can be 'Completed'
+    start: 567,
+    remain: 0,
   }));
 
   const [entriesPerPage, setEntriesPerPage] = useState(10);
@@ -31,6 +35,28 @@ const OrderTable = () => {
   const handleTabChange = (tab) => {
     setActiveTab(tab); // Update active tab
   };
+
+  const CustomToggle = React.forwardRef(({ onClick }, ref) => (
+    <button
+      ref={ref}
+      onClick={(e) => {
+        e.preventDefault();
+        onClick(e);
+      }}
+      className="p-2 bg-light border rounded-circle"
+      style={{
+        borderRadius: '50%',
+        border: '1px solid #ddd',
+        width: '40px',
+        height: '40px',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}
+    >
+      <BsThreeDots />
+    </button>
+  ));
 
   return (
     <div className="container mt-4">
@@ -84,7 +110,6 @@ const OrderTable = () => {
       <Table hover responsive>
         <thead>
           <tr style={{ backgroundColor: 'rgba(61, 85, 203, 0.15)' }}>
-            {/* Applying the #3D55CB with 15% opacity */}
             <th>
               <Form.Check type="checkbox" />
             </th>
@@ -95,6 +120,10 @@ const OrderTable = () => {
             <th>Service</th>
             <th>Charge</th>
             <th>Date</th>
+            <th>Status</th>
+            <th>Start</th>
+            <th>Remain</th>
+            <th>Action</th>
           </tr>
         </thead>
         <tbody>
@@ -114,6 +143,27 @@ const OrderTable = () => {
               <td>{user.service}</td>
               <td>{user.charge}</td>
               <td>{user.date}</td>
+              <td>
+                <span
+                  className={`px-2 py-1 rounded text-white ${
+                    user.status === 'Completed' ? 'bg-success' : 'bg-secondary'
+                  }`}
+                >
+                  {user.status}
+                </span>
+              </td>
+              <td>{user.start}</td>
+              <td>{user.remain}</td>
+              <td>
+                <Dropdown>
+                  <Dropdown.Toggle as={CustomToggle} id="dropdown-custom-components" />
+                  <Dropdown.Menu>
+                    <Dropdown.Item href="#">View</Dropdown.Item>
+                    <Dropdown.Item href="#">Edit</Dropdown.Item>
+                    <Dropdown.Item href="#">Delete</Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
+              </td>
             </tr>
           ))}
         </tbody>

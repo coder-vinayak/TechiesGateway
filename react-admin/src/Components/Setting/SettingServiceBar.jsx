@@ -1,10 +1,9 @@
-// src/Components/ServiceBar.js
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Assuming you're using Bootstrap for styling
 import '../ServicePage/ServiceBar.css'; // Importing custom CSS for blur effect
 import { useNavigate } from 'react-router-dom';
 
-const ServiceBar = () => {
+const SettingServiceBar = () => {
   const navigate = useNavigate();
   const [showModal, setShowModal] = useState(false);
 
@@ -18,6 +17,7 @@ const ServiceBar = () => {
       document.body.classList.remove('modal-open');
     }
   };
+  
   const handleNextClick = () => {
     navigate('/service/import-service');
   };
@@ -27,16 +27,19 @@ const ServiceBar = () => {
       {/* Main content */}
       <div className={`bg-white p-3 mb-4 shadow-sm rounded ${showModal ? 'blurred-background' : ''}`}>
         <div className="d-flex justify-content-between align-items-center">
-          <h5 className="mb-0">Service</h5>
-          <div className="d-flex">
-            {/* Add Service Button */}
-            <button className="btn btn-outline-primary me-3">+ Add Service</button>
-            {/* Add Service Button */}
-            <button className="btn btn-outline-primary me-3">+ Add Servicr</button>
-            {/* Action Button */}
-            <button className="btn btn-outline-secondary me-3">Action</button>
-            {/* Import Service Button */}
-            <button className="btn btn-primary" onClick={toggleModal}>Import Service</button>
+          <h5 className="mb-0">Setting</h5>
+
+          <div className="d-flex align-items-center">
+            {/* Search Bar */}
+            <input
+              type="text"
+              className="form-control me-3"
+              placeholder="Search"
+              style={{ width: '250px' }}
+            />
+
+            {/* Add New Provider Button */}
+            <button className="btn btn-outline-primary">+ Add New Provider</button>
           </div>
         </div>
       </div>
@@ -73,7 +76,7 @@ const ServiceBar = () => {
                 </div>
                 <div className="modal-footer">
                   <button type="button" className="btn btn-secondary" onClick={toggleModal}>Cancel</button>
-                  <button type="button" className="btn btn-primary" onClick={handleNextClick}> Next</button>
+                  <button type="button" className="btn btn-primary" onClick={handleNextClick}>Next</button>
                 </div>
               </div>
             </div>
@@ -84,4 +87,4 @@ const ServiceBar = () => {
   );
 };
 
-export default ServiceBar;
+export default SettingServiceBar;
