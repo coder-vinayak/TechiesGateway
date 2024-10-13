@@ -1,10 +1,10 @@
 import React from 'react'
 import './Cardsofdashboard.css'
-const Cardsofdashboard = ({amt, title, icon}) => {
+const Cardsofdashboard = ({amt, title, icon,dc}) => {
   return (
     <div className='main'>
       <div className='m2'>
-        <div className='icon'>
+        <div className={`icon ${dc}`}>
         {icon}
         </div>
         <div className='data'>
